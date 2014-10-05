@@ -28,6 +28,7 @@ setup_admin_user() {
     #trac-admin /trac session add admin admin root@localhost
     trac-admin /trac session add admin admin
     trac-admin /trac permission add admin TRAC_ADMIN
+    trac-admin /trac permission add admin XML_RPC
 
     if [ ! -f /.trac_admin_password ]
     then
